@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		672198E32500445200D2A761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672198E22500445200D2A761 /* AppDelegate.swift */; };
-		672198E52500445200D2A761 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672198E42500445200D2A761 /* SceneDelegate.swift */; };
 		672198E72500445200D2A761 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672198E62500445200D2A761 /* ViewController.swift */; };
-		672198EA2500445200D2A761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672198E82500445200D2A761 /* Main.storyboard */; };
 		672198EC2500445500D2A761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672198EB2500445500D2A761 /* Assets.xcassets */; };
 		672198EF2500445500D2A761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672198ED2500445500D2A761 /* LaunchScreen.storyboard */; };
+		672198F82500450200D2A761 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672198F72500450200D2A761 /* Extensions.swift */; };
+		672198FF2500495E00D2A761 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672198FE2500495E00D2A761 /* VideoCollectionViewCell.swift */; };
+		6721990125004B8000D2A761 /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6721990025004B8000D2A761 /* videoplayback.mp4 */; };
+		6721990325004C2900D2A761 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721990225004C2900D2A761 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		672198DF2500445200D2A761 /* TicTokFeedClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTokFeedClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672198E22500445200D2A761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		672198E42500445200D2A761 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		672198E62500445200D2A761 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		672198E92500445200D2A761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		672198EB2500445500D2A761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		672198EE2500445500D2A761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		672198F02500445500D2A761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		672198F72500450200D2A761 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		672198FE2500495E00D2A761 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		6721990025004B8000D2A761 /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
+		6721990225004C2900D2A761 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		672198E12500445200D2A761 /* TicTokFeedClone */ = {
 			isa = PBXGroup;
 			children = (
-				672198E22500445200D2A761 /* AppDelegate.swift */,
-				672198E42500445200D2A761 /* SceneDelegate.swift */,
-				672198E62500445200D2A761 /* ViewController.swift */,
-				672198E82500445200D2A761 /* Main.storyboard */,
+				6721990025004B8000D2A761 /* videoplayback.mp4 */,
+				672198FC2500457200D2A761 /* Model */,
+				672198FA2500456900D2A761 /* View */,
+				672198F92500452800D2A761 /* Controller */,
+				672198F6250044F000D2A761 /* Utils */,
 				672198EB2500445500D2A761 /* Assets.xcassets */,
 				672198ED2500445500D2A761 /* LaunchScreen.storyboard */,
 				672198F02500445500D2A761 /* Info.plist */,
+				672198E22500445200D2A761 /* AppDelegate.swift */,
 			);
 			path = TicTokFeedClone;
+			sourceTree = "<group>";
+		};
+		672198F6250044F000D2A761 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				672198F72500450200D2A761 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		672198F92500452800D2A761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				672198E62500445200D2A761 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		672198FA2500456900D2A761 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				672198FE2500495E00D2A761 /* VideoCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		672198FC2500457200D2A761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6721990225004C2900D2A761 /* VideoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				672198EF2500445500D2A761 /* LaunchScreen.storyboard in Resources */,
+				6721990125004B8000D2A761 /* videoplayback.mp4 in Resources */,
 				672198EC2500445500D2A761 /* Assets.xcassets in Resources */,
-				672198EA2500445200D2A761 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +177,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				672198E72500445200D2A761 /* ViewController.swift in Sources */,
+				672198F82500450200D2A761 /* Extensions.swift in Sources */,
+				672198FF2500495E00D2A761 /* VideoCollectionViewCell.swift in Sources */,
+				6721990325004C2900D2A761 /* VideoModel.swift in Sources */,
 				672198E32500445200D2A761 /* AppDelegate.swift in Sources */,
-				672198E52500445200D2A761 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		672198E82500445200D2A761 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				672198E92500445200D2A761 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		672198ED2500445500D2A761 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4H8VGPKG6U;
 				INFOPLIST_FILE = TicTokFeedClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4H8VGPKG6U;
 				INFOPLIST_FILE = TicTokFeedClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
